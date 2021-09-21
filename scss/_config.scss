@@ -1,5 +1,8 @@
-$primary-color: #272727;
+$primary-color: #f5f5f5;
 $secondary-color: #ff652f;
+
+// $primary-color: #272727;
+// $secondary-color: #ff652f;
 
 * {
   box-sizing: border-box;
@@ -13,8 +16,10 @@ $secondary-color: #ff652f;
 
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
-    @return #000;
+    // @return #000;
+    @return #3e6b89;
   } @else {
+    // @return #fff;
     @return #fff;
   }
 }
